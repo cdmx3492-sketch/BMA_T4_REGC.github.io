@@ -1,1 +1,0 @@
-# BMA_T4_REGC.github.io
