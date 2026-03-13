@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Labs México | Nueva Dimensión Educativa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            teal: '#1b7d78',
+                            dark: '#0a0a0a',
+                            darker: '#050505',
+                            card: '#1c1c1c',
+                            border: '#2a2a2a',
+                            light: '#f5f5f5',
+                            textDark: '#aaaaaa',
+                            textLight: '#555555'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-brand-dark text-white font-sans antialiased overflow-x-hidden selection:bg-brand-teal selection:text-white">
+
+    <nav id="navbar" class="fixed w-full z-50 top-0 transition-all duration-300 bg-transparent border-b border-transparent">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#inicio" class="text-white font-bold text-xl tracking-tight">VR Labs México</a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#inicio" class="text-brand-textDark hover:text-white text-sm font-medium transition-colors">Inicio</a>
+                <a href="#solucion" class="text-brand-textDark hover:text-white text-sm font-medium transition-colors">Solución</a>
+                <a href="#beneficios" class="text-brand-textDark hover:text-white text-sm font-medium transition-colors">Beneficios</a>
+                <a href="#precios" class="text-brand-textDark hover:text-white text-sm font-medium transition-colors">Precios</a>
+                <a href="#contacto" class="text-brand-textDark hover:text-white text-sm font-medium transition-colors">Contacto</a>
+            </div>
+            <a href="#contacto" class="border border-brand-teal text-brand-teal hover:bg-brand-teal hover:text-white px-5 py-2 rounded-full text-sm font-medium transition-all duration-300">
+                Solicitar Demo <i data-lucide="arrow-right" class="inline w-4 h-4 ml-1"></i>
+            </a>
+        </div>
+    </nav>
+
+    <section id="inicio" class="relative min-h-screen pt-20 flex flex-col justify-between bg-brand-dark overflow-hidden">
+        <div class="flex-1 flex flex-col lg:flex-row">
+            <div class="w-full lg:w-[55%] flex flex-col justify-center px-6 lg:pl-16 xl:pl-24 pt-12 lg:pt-0 z-10 fade-up">
+                <span class="text-brand-teal uppercase text-xs tracking-[3px] font-bold mb-6 block">/ VR LABS MÉXICO</span>
+                <h1 class="text-[clamp(52px,8vw,96px)] font-black leading-[0.92] uppercase tracking-tight mb-8">
+                    <span class="block text-white">NUEVA</span>
+                    <span class="block text-white">DIMENSIÓN</span>
+                    <span class="block text-brand-teal">EDUCATIVA</span>
+                </h1>
+                <p class="text-brand-textDark text-base md:text-lg max-w-[480px] mb-10 leading-relaxed">
+                    Permitimos a universidades y empresas mexicanas realizar prácticas STEM inmersivas desde cualquier navegador — sin laboratorios físicos, sin hardware costoso.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contacto" class="bg-brand-teal text-white px-7 py-3.5 rounded-full font-medium text-center hover:scale-105 hover:brightness-110 transition-all duration-200">
+                        Solicitar Demo <i data-lucide="arrow-right" class="inline w-4 h-4 ml-1"></i>
+                    </a>
+                    <a href="#solucion" class="border border-white text-white px-7 py-3.5 rounded-full font-medium text-center hover:scale-105 hover:bg-white hover:text-brand-dark transition-all duration-200">
+                        Ver cómo funciona
+                    </a>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-[45%] relative h-[50vh] lg:h-auto mt-12 lg:mt-0">
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#0a0a0a_100%)] z-10 pointer-events-none"></div>
+                <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=900" alt="Estudiante usando realidad virtual" class="absolute inset-0 w-full h-full object-cover">
+                
+                <div class="absolute top-12 left-0 lg:-left-12 z-20 bg-brand-card border border-brand-border rounded-xl p-4 shadow-2xl stat-card fade-up delay-100">
+                    <div class="text-brand-teal font-bold text-2xl mb-1"><span class="counter" data-target="80">0</span>%</div>
+                    <div class="text-white text-[11px] uppercase tracking-wide">Mejora en engagement estudiantil</div>
+                </div>
+
+                <div class="absolute bottom-24 right-6 z-20 bg-brand-card border border-brand-border rounded-xl p-4 shadow-2xl stat-card fade-up delay-200">
+                    <div class="text-brand-teal font-bold text-2xl mb-1"><span class="counter" data-target="70">0</span>%</div>
+                    <div class="text-white text-[11px] uppercase tracking-wide">Reducción de costos vs lab físico</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full border-t border-brand-border py-5 px-6 z-10 bg-brand-dark fade-up delay-300">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+                <span class="text-brand-textLight text-xs">Instituciones que confían en nosotros:</span>
+                <div class="flex flex-wrap justify-center gap-6 md:gap-8 opacity-50 grayscale">
+                    <span class="text-brand-textDark font-bold uppercase text-xs tracking-wider">IPN</span>
+                    <span class="text-brand-textDark font-bold uppercase text-xs tracking-wider">·</span>
+                    <span class="text-brand-textDark font-bold uppercase text-xs tracking-wider">UAM</span>
+                    <span class="text-brand-textDark font-bold uppercase text-xs tracking-wider">·</span>
+                    <span class="text-brand-textDark font-bold uppercase text-xs tracking-wider">UNAM</span>
+                    <span class="text-brand-textDark font-bold uppercase text-xs tracking-wider">·</span>
+                    <span class="text-brand-textDark font-bold uppercase text-xs tracking-wider">Amerike</span>
+                    <span class="text-brand-textDark font-bold uppercase text-xs tracking-wider">·</span>
+                    <span class="text-brand-textDark font-bold uppercase text-xs tracking-wider">Tec de Monterrey</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solucion" class="py-32 bg-[#111111] px-6">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-brand-teal uppercase text-xs tracking-[3px] font-bold mb-6 block fade-up">/ NUESTRA SOLUCIÓN</span>
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-12 mb-20 fade-up">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight uppercase max-w-2xl">
+                    <span class="block text-white">EXPLORA EL FUTURO DE LA</span>
+                    <span class="block text-brand-teal">EDUCACIÓN STEM</span>
+                </h2>
+                <p class="text-brand-textDark max-w-md text-lg leading-relaxed">
+                    Nuestra plataforma convierte el aprendizaje complejo en experiencias visuales y prácticas, eliminando las barreras del mundo físico y democratizando el acceso a tecnología de punta.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-brand-card border border-brand-border rounded-2xl p-8 hover:-translate-y-1 hover:border-brand-teal transition-all duration-250 fade-up group">
+                    <i data-lucide="beaker" class="w-10 h-10 text-brand-teal mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-white font-bold text-xl mb-3">Inmersión Total en STEM</h3>
+                    <p class="text-brand-textDark text-sm leading-relaxed">Laboratorios de física, química e ingeniería en Unity WebGL/VR/AR. Experiencias que replican el mundo real.</p>
+                </div>
+                <div class="bg-brand-card border border-brand-border rounded-2xl p-8 hover:-translate-y-1 hover:border-brand-teal transition-all duration-250 fade-up delay-100 group">
+                    <i data-lucide="cpu" class="w-10 h-10 text-brand-teal mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-white font-bold text-xl mb-3">Tutor de IA Integrado</h3>
+                    <p class="text-brand-textDark text-sm leading-relaxed">Inteligencia artificial que guía al alumno, detecta errores en tiempo real y adapta la dificultad del experimento.</p>
+                </div>
+                <div class="bg-brand-card border border-brand-border rounded-2xl p-8 hover:-translate-y-1 hover:border-brand-teal transition-all duration-250 fade-up delay-200 group">
+                    <i data-lucide="bar-chart-2" class="w-10 h-10 text-brand-teal mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-white font-bold text-xl mb-3">Métricas en Tiempo Real</h3>
+                    <p class="text-brand-textDark text-sm leading-relaxed">Dashboards por alumno, grupo y docente. Reportes alineados al plan de estudios nacional mexicano.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="como-funciona" class="py-32 bg-brand-light px-6">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
+            <div class="w-full lg:w-[35%] flex flex-col justify-center fade-up">
+                <span class="text-brand-teal uppercase text-xs tracking-[3px] font-bold mb-6 block">/ CÓMO FUNCIONA</span>
+                <h2 class="text-4xl md:text-5xl font-black leading-tight uppercase text-brand-dark mb-12">
+                    <span class="block">SIMPLE DE</span>
+                    <span class="block">IMPLEMENTAR</span>
+                </h2>
+                
+                <div class="flex flex-col space-y-2 mb-10" id="tabs-container">
+                    <div class="tab-item active cursor-pointer py-4 pl-6 border-l-2 border-brand-teal" data-index="0">
+                        <h4 class="text-brand-dark font-bold text-lg mb-2">01 — Accede desde el navegador</h4>
+                        <p class="text-brand-textLight text-sm tab-content block">Sin instalaciones ni hardware especializado. Cualquier computadora con internet es suficiente.</p>
+                    </div>
+                    <div class="tab-item cursor-pointer py-4 pl-6 border-l-2 border-transparent hover:border-gray-300 transition-colors" data-index="1">
+                        <h4 class="text-brand-textLight font-bold text-lg mb-2 transition-colors">02 — Realiza prácticas inmersivas</h4>
+                        <p class="text-brand-textLight text-sm tab-content hidden">Labs de física, química e ingeniería con tutor de IA. Experimentos interactivos con feedback inmediato.</p>
+                    </div>
+                    <div class="tab-item cursor-pointer py-4 pl-6 border-l-2 border-transparent hover:border-gray-300 transition-colors" data-index="2">
+                        <h4 class="text-brand-textLight font-bold text-lg mb-2 transition-colors">03 — Mide los resultados</h4>
+                        <p class="text-brand-textLight text-sm tab-content hidden">Reportes automáticos de desempeño por alumno y grupo. Integración directa con tu LMS (Moodle, Canvas).</p>
+                    </div>
+                </div>
+
+                <a href="#contacto" class="text-brand-teal font-medium hover:underline inline-flex items-center w-fit">
+                    Solicitar Demo <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                </a>
+            </div>
+
+            <div class="w-full lg:w-[65%] h-[420px] rounded-[20px] overflow-hidden relative fade-up delay-100 shadow-xl">
+                <img id="tab-image-0" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800" alt="Plataforma en navegador" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-100" loading="lazy">
+                <img id="tab-image-1" src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=800" alt="Experiencia inmersiva" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" loading="lazy">
+                <img id="tab-image-2" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" alt="Métricas y resultados" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="py-32 bg-brand-dark px-6 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+            <span class="text-brand-teal uppercase text-xs tracking-[3px] font-bold mb-6 block fade-up">/ LA PLATAFORMA</span>
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight uppercase mb-20 fade-up">
+                <span class="block text-white">EL APEX DE LA</span>
+                <span class="block text-brand-teal">EDUCACIÓN INMERSIVA</span>
+            </h2>
+
+            <div class="relative w-full max-w-[1000px] flex justify-center fade-up">
+                <div class="absolute inset-0 bg-brand-teal opacity-20 blur-[100px] rounded-full"></div>
+                <img src="https://images.unsplash.com/photo-1617802690992-15d93263d3a9?w=1000" alt="Vista del hardware" class="w-[60%] object-contain relative z-10 drop-shadow-[0_0_80px_rgba(27,125,120,0.3)] rounded-2xl" loading="lazy">
+                
+                <div class="hidden md:block absolute top-[10%] left-[5%] z-20 bg-brand-card border border-brand-border rounded-lg p-3 shadow-xl hover:-translate-y-1 transition-transform">
+                    <div class="text-brand-teal font-bold text-[13px]">Tutor de IA</div>
+                    <div class="text-white text-[11px]">Adaptación en tiempo real</div>
+                </div>
+                
+                <div class="hidden md:block absolute top-[15%] right-[5%] z-20 bg-brand-card border border-brand-border rounded-lg p-3 shadow-xl hover:-translate-y-1 transition-transform">
+                    <div class="text-brand-teal font-bold text-[13px]">Sin Hardware VR</div>
+                    <div class="text-white text-[11px]">100% desde el navegador</div>
+                </div>
+                
+                <div class="hidden md:block absolute bottom-[20%] left-[2%] z-20 bg-brand-card border border-brand-border rounded-lg p-3 shadow-xl hover:-translate-y-1 transition-transform">
+                    <div class="text-brand-teal font-bold text-[13px]">Métricas Docentes</div>
+                    <div class="text-white text-[11px]">Reportes automáticos</div>
+                </div>
+                
+                <div class="hidden md:block absolute bottom-[15%] right-[2%] z-20 bg-brand-card border border-brand-border rounded-lg p-3 shadow-xl hover:-translate-y-1 transition-transform">
+                    <div class="text-brand-teal font-bold text-[13px]">Integración LMS</div>
+                    <div class="text-white text-[11px]">Moodle, Canvas y más</div>
+                </div>
+            </div>
+
+            <a href="#contacto" class="mt-20 bg-brand-teal text-white px-8 py-4 rounded-full font-medium hover:scale-105 hover:brightness-110 transition-all duration-200 fade-up inline-flex items-center">
+                Ver demostración <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="testimonios" class="py-32 bg-[#111111] px-6">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-brand-teal uppercase text-xs tracking-[3px] font-bold mb-6 block fade-up">/ TESTIMONIOS</span>
+            <div class="flex flex-col md:flex-row justify-between items-start gap-8 mb-16 fade-up">
+                <h2 class="text-3xl md:text-5xl font-black leading-tight uppercase text-white">
+                    <span class="block">LO QUE DICEN</span>
+                    <span class="block">NUESTROS CLIENTES</span>
+                </h2>
+                <p class="text-brand-textDark max-w-md text-base mt-2">
+                    Instituciones que ya transformaron su modelo educativo con VR Labs México.
+                </p>
+            </div>
+
+            <div class="relative fade-up">
+                <div class="bg-brand-card border border-brand-border rounded-[20px] p-8 md:p-12 min-h-[300px] flex flex-col justify-between" id="testimonial-container">
+                    
+                </div>
+                <div class="flex gap-4 mt-8 justify-end">
+                    <button id="prev-testimonial" class="w-12 h-12 rounded-full border border-brand-border flex items-center justify-center text-white hover:border-brand-teal hover:text-brand-teal transition-colors">
+                        <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                    </button>
+                    <button id="next-testimonial" class="w-12 h-12 rounded-full border border-brand-border flex items-center justify-center text-white hover:border-brand-teal hover:text-brand-teal transition-colors">
+                        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="precios" class="py-32 bg-brand-light px-6">
+        <div class="max-w-7xl mx-auto flex flex-col items-center">
+            <span class="text-brand-teal uppercase text-xs tracking-[3px] font-bold mb-6 block text-center fade-up">/ PLANES Y PRECIOS</span>
+            <h2 class="text-4xl md:text-5xl font-black leading-tight uppercase text-brand-dark text-center mb-16 fade-up">
+                <span class="block">INVERSIÓN QUE</span>
+                <span class="block">GENERA RESULTADOS</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-[900px] mb-12">
+                <div class="bg-white border border-[#e0e0e0] rounded-[20px] p-10 hover:-translate-y-2 transition-transform duration-300 fade-up flex flex-col h-full shadow-lg">
+                    <h3 class="text-xl font-bold text-brand-dark mb-4">Setup por Laboratorio</h3>
+                    <div class="text-[36px] font-bold text-brand-dark leading-none mb-2">$150,000 <span class="text-lg">MXN</span></div>
+                    <p class="text-brand-textLight text-sm mb-8">pago único por laboratorio</p>
+                    <hr class="border-[#e0e0e0] mb-8">
+                    <ul class="space-y-4 mb-10 flex-1">
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-teal mr-3 shrink-0"></i><span class="text-brand-dark text-sm">Configuración y personalización completa</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-teal mr-3 shrink-0"></i><span class="text-brand-dark text-sm">Alineación al plan de estudios institucional</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-teal mr-3 shrink-0"></i><span class="text-brand-dark text-sm">Capacitación inicial a docentes</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-teal mr-3 shrink-0"></i><span class="text-brand-dark text-sm">Integración con LMS existente</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-teal mr-3 shrink-0"></i><span class="text-brand-dark text-sm">Soporte en arranque del primer semestre</span></li>
+                    </ul>
+                    <a href="#contacto" class="w-full block text-center border border-brand-dark text-brand-dark py-4 rounded-xl font-medium hover:bg-brand-dark hover:text-white transition-colors duration-200">
+                        Solicitar Cotización <i data-lucide="arrow-right" class="inline w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="bg-brand-dark border-2 border-brand-teal rounded-[20px] p-10 hover:-translate-y-2 transition-transform duration-300 fade-up delay-100 flex flex-col h-full relative shadow-2xl">
+                    <div class="absolute top-6 right-6 bg-brand-teal text-white text-[10px] font-bold px-3 py-1 rounded-full tracking-wider uppercase">MÁS POPULAR</div>
+                    <h3 class="text-xl font-bold text-white mb-4">Suscripción Mensual</h3>
+                    <div class="text-[36px] font-bold text-white leading-none mb-2">$12,000 <span class="text-lg">MXN</span></div>
+                    <p class="text-brand-textDark text-sm mb-8">/mes por laboratorio activo</p>
+                    <hr class="border-brand-border mb-8">
+                    <ul class="space-y-4 mb-10 flex-1">
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-teal mr-3 shrink-0"></i><span class="text-white text-sm">Acceso ilimitado alumnos y docentes</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-teal mr-3 shrink-0"></i><span class="text-white text-sm">Soporte técnico continuo</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-teal mr-3 shrink-0"></i><span class="text-white text-sm">Actualizaciones periódicas de contenido</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-teal mr-3 shrink-0"></i><span class="text-white text-sm">Métricas y reportes mensuales</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-teal mr-3 shrink-0"></i><span class="text-white text-sm">Tutor de IA incluido</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-teal mr-3 shrink-0"></i><span class="text-white text-sm">Integraciones LMS incluidas</span></li>
+                    </ul>
+                    <a href="#contacto" class="w-full block text-center bg-brand-teal text-white py-4 rounded-xl font-medium hover:brightness-110 transition-all duration-200">
+                        Comenzar Ahora <i data-lucide="arrow-right" class="inline w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center text-brand-textLight text-sm max-w-xl fade-up delay-200">
+                <p>Descuentos por volumen disponibles para múltiples laboratorios o campus. ¿Tienes más de 3 labs? Contáctanos.</p>
+                <a href="#contacto" class="text-brand-teal hover:underline font-medium mt-2 inline-block">Hablar con ventas <i data-lucide="arrow-right" class="inline w-3 h-3"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="recursos" class="py-32 bg-brand-light px-6 border-t border-[#e0e0e0]">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-brand-teal uppercase text-xs tracking-[3px] font-bold mb-6 block fade-up">/ RECURSOS</span>
+            <div class="flex flex-col md:flex-row justify-between items-start gap-8 mb-16 fade-up">
+                <h2 class="text-3xl md:text-5xl font-black leading-tight uppercase text-brand-dark">
+                    <span class="block">EXPLORA EL FUTURO</span>
+                    <span class="block">DE LA EDUCACIÓN VR</span>
+                </h2>
+                <p class="text-brand-textLight max-w-md text-base mt-2">
+                    Insights, casos de estudio y noticias sobre la intersección entre tecnología e innovación educativa en América Latina.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-[16px] overflow-hidden shadow-md hover:-translate-y-2 transition-transform duration-300 border border-[#e0e0e0] fade-up">
+                    <div class="h-[200px] w-full relative">
+                        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600" alt="IA en laboratorios" class="w-full h-full object-cover" loading="lazy">
+                        <div class="absolute top-4 left-4 bg-brand-teal text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase">Innovación Educativa</div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-brand-textLight text-xs mb-3">15 de febrero, 2026</p>
+                        <h3 class="text-brand-dark font-bold text-lg mb-6 leading-snug">Cómo la IA está revolucionando los laboratorios universitarios en México</h3>
+                        <button onclick="alert('Artículo próximamente disponible.')" class="text-brand-teal font-medium hover:underline text-sm inline-flex items-center">
+                            Leer más <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-[16px] overflow-hidden shadow-md hover:-translate-y-2 transition-transform duration-300 border border-[#e0e0e0] fade-up delay-100">
+                    <div class="h-[200px] w-full relative">
+                        <img src="https://images.unsplash.com/photo-1532094349884-543559c28b4a?w=600" alt="Caso de éxito" class="w-full h-full object-cover" loading="lazy">
+                        <div class="absolute top-4 left-4 bg-brand-dark text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase">Caso de Éxito</div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-brand-textLight text-xs mb-3">28 de enero, 2026</p>
+                        <h3 class="text-brand-dark font-bold text-lg mb-6 leading-snug">El Tec de Monterrey redujo su deserción en carreras STEM con laboratorios virtuales</h3>
+                        <button onclick="alert('Artículo próximamente disponible.')" class="text-brand-teal font-medium hover:underline text-sm inline-flex items-center">
+                            Leer más <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-[100px] bg-brand-dark px-6">
+        <div class="max-w-7xl mx-auto flex flex-col items-center">
+            <h2 class="text-[clamp(36px,6vw,72px)] font-black leading-tight uppercase text-center mb-6 fade-up">
+                <span class="block text-white">¿LISTO PARA TRANSFORMAR</span>
+                <span class="block text-brand-teal">TU INSTITUCIÓN?</span>
+            </h2>
+            <p class="text-brand-textDark text-center max-w-xl mx-auto text-lg mb-10 fade-up">
+                Agenda una demo personalizada sin costo. Nuestro equipo se adapta a tus tiempos y necesidades.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 mb-20 fade-up">
+                <button onclick="document.getElementById('contact-form-section').scrollIntoView({behavior: 'smooth'})" class="bg-brand-teal text-white px-8 py-4 rounded-full font-medium text-center hover:scale-105 hover:brightness-110 transition-all duration-200">
+                    Solicitar Demo <i data-lucide="arrow-right" class="inline w-4 h-4 ml-1"></i>
+                </button>
+                <a href="#precios" class="border border-white text-white px-8 py-4 rounded-full font-medium text-center hover:scale-105 hover:bg-white hover:text-brand-dark transition-all duration-200">
+                    Ver Precios
+                </a>
+            </div>
+
+            <div id="contact-form-section" class="w-full max-w-[680px] bg-[#111111] border border-brand-border rounded-[20px] p-8 md:p-10 fade-up">
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex flex-col">
+                            <label class="text-white text-sm mb-2 font-medium">Nombre completo *</label>
+                            <input type="text" id="form-name" class="bg-brand-card border border-brand-border rounded-[10px] px-4 py-3 text-white focus:outline-none focus:border-brand-teal transition-colors" placeholder="Ej. Juan Pérez">
+                            <span class="text-red-500 text-xs mt-1 hidden error-msg">Campo requerido</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="text-white text-sm mb-2 font-medium">Correo institucional *</label>
+                            <input type="email" id="form-email" class="bg-brand-card border border-brand-border rounded-[10px] px-4 py-3 text-white focus:outline-none focus:border-brand-teal transition-colors" placeholder="juan@universidad.edu.mx">
+                            <span class="text-red-500 text-xs mt-1 hidden error-msg">Correo válido requerido</span>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex flex-col">
+                            <label class="text-white text-sm mb-2 font-medium">Institución *</label>
+                            <input type="text" id="form-org" class="bg-brand-card border border-brand-border rounded-[10px] px-4 py-3 text-white focus:outline-none focus:border-brand-teal transition-colors" placeholder="Nombre de la universidad o empresa">
+                            <span class="text-red-500 text-xs mt-1 hidden error-msg">Campo requerido</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="text-white text-sm mb-2 font-medium">Cargo / Puesto *</label>
+                            <input type="text" id="form-role" class="bg-brand-card border border-brand-border rounded-[10px] px-4 py-3 text-white focus:outline-none focus:border-brand-teal transition-colors" placeholder="Ej. Director de Carrera">
+                            <span class="text-red-500 text-xs mt-1 hidden error-msg">Campo requerido</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label class="text-white text-sm mb-2 font-medium">Teléfono</label>
+                        <input type="tel" id="form-phone" class="bg-brand-card border border-brand-border rounded-[10px] px-4 py-3 text-white focus:outline-none focus:border-brand-teal transition-colors" placeholder="+52 (00) 0000 0000">
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label class="text-white text-sm mb-2 font-medium">Mensaje</label>
+                        <textarea id="form-msg" rows="4" class="bg-brand-card border border-brand-border rounded-[10px] px-4 py-3 text-white focus:outline-none focus:border-brand-teal transition-colors resize-none" placeholder="¿Cómo podemos ayudarte?"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-brand-teal text-white py-4 rounded-[10px] font-bold text-lg hover:brightness-110 transition-all duration-200 mt-4 shadow-lg hover:-translate-y-1">
+                        Solicitar Demo Gratuita <i data-lucide="arrow-right" class="inline w-5 h-5 ml-2"></i>
+                    </button>
+                </form>
+
+                <div id="success-msg" class="hidden flex-col items-center justify-center py-10 text-center bg-brand-card border border-brand-teal rounded-xl p-8">
+                    <div class="w-16 h-16 bg-brand-teal/20 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="check" class="w-8 h-8 text-brand-teal"></i>
+                    </div>
+                    <h3 class="text-white text-2xl font-bold mb-2">¡Solicitud enviada!</h3>
+                    <p class="text-brand-textDark">Nos pondremos en contacto en menos de 24 horas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-darker pt-20 pb-10 px-6 border-t border-[#111]">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-10">
+                <div class="w-full md:w-1/3">
+                    <a href="#inicio" class="text-white font-bold text-xl tracking-tight block mb-4">VR Labs México</a>
+                    <p class="text-brand-textDark text-sm max-w-[260px] leading-relaxed">
+                        Laboratorios STEM inmersivos, sin construir nada físico.
+                    </p>
+                </div>
+                
+                <div class="w-full md:w-1/3">
+                    <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Producto</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#solucion" class="text-brand-textLight hover:text-brand-teal text-sm transition-colors">Nuestra Solución</a></li>
+                        <li><a href="#beneficios" class="text-brand-textLight hover:text-brand-teal text-sm transition-colors">Beneficios</a></li>
+                        <li><a href="#precios" class="text-brand-textLight hover:text-brand-teal text-sm transition-colors">Planes y Precios</a></li>
+                        <li><a href="#contacto" class="text-brand-textLight hover:text-brand-teal text-sm transition-colors">Solicitar Demo</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-full md:w-1/3">
+                    <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Contacto</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-brand-textLight text-sm hover:text-white transition-colors cursor-pointer">
+                            <i data-lucide="mail" class="w-4 h-4 mr-3"></i> contacto@vrlabsmexico.com
+                        </li>
+                        <li class="flex items-center text-brand-textLight text-sm hover:text-white transition-colors cursor-pointer">
+                            <i data-lucide="map-pin" class="w-4 h-4 mr-3"></i> Ciudad de México, México
+                        </li>
+                        <li class="mt-4 block">
+                            <a href="#" target="_blank" class="text-brand-textLight hover:text-white transition-colors inline-block">
+                                <i data-lucide="linkedin" class="w-5 h-5"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-brand-card pt-8 flex flex-col md:flex-row justify-between items-end relative overflow-hidden">
+                <p class="text-brand-textLight text-xs relative z-10 mb-4 md:mb-0">
+                    © 2026 VR Labs México. Todos los derechos reservados.
+                </p>
+                <div class="text-[#111111] font-black text-5xl md:text-[80px] leading-none select-none relative z-0 md:absolute md:bottom-[-20px] md:right-0 tracking-tighter">
+                    VRLABS
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
